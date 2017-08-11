@@ -1,4 +1,4 @@
-# This is a detailed instruction on how to install dlib and openCV on windows
+# Facial Recognition on Windows
 
 ## Part 1: Prerequisites
 This contains instructions on how to install dlib and open_CV on Windows based on collections of other resources.
