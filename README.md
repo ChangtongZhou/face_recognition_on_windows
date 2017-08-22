@@ -82,12 +82,12 @@ cd build
 cmake -G "Visual Studio 14 2015 Win64" ..
   
 #### If you have Anaconda installed on your machine
-cmake -G "Visual Studio 14 2015 Win64" `
--DJPEG_INCLUDE_DIR=..\..\dlib\external\libjpeg `
--DJPEG_LIBRARY=..\..\dlib\external\libjpeg `
--DPNG_PNG_INCLUDE_DIR=..\..\dlib\external\libpng ` -DPNG_LIBRARY_RELEASE=..\..\dlib\external\libpng `
--DZLIB_INCLUDE_DIR=..\..\dlib\external\zlib `
--DZLIB_LIBRARY_RELEASE=..\..\dlib\external\zlib `
+cmake -G "Visual Studio 14 2015 Win64" ^
+-DJPEG_INCLUDE_DIR=..\..\dlib\external\libjpeg ^
+-DJPEG_LIBRARY=..\..\dlib\external\libjpeg ^
+-DPNG_PNG_INCLUDE_DIR=..\..\dlib\external\libpng ` -DPNG_LIBRARY_RELEASE=..\..\dlib\external\libpng ^
+-DZLIB_INCLUDE_DIR=..\..\dlib\external\zlib ^
+-DZLIB_LIBRARY_RELEASE=..\..\dlib\external\zlib ^
 ..
  
 cmake --build . --config Release
