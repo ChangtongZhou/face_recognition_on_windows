@@ -60,11 +60,19 @@ cmake -G "Visual Studio 14 2015 Win64" -DCMAKE_INSTALL_PREFIX=install ..
   
 #### If you have Anaconda installed on your machine (I used this one)
 cmake -G "Visual Studio 14 2015 Win64" ^
+
 -DJPEG_INCLUDE_DIR=..\dlib\external\libjpeg ^
+
 -DJPEG_LIBRARY=..\dlib\external\libjpeg ^
--DPNG_PNG_INCLUDE_DIR=..\dlib\external\libpng ^ -DPNG_LIBRARY_RELEASE=..\dlib\external\libpng ^
+
+-DPNG_PNG_INCLUDE_DIR=..\dlib\external\libpng ^
+
+-DPNG_LIBRARY_RELEASE=..\dlib\external\libpng ^
+
 -DZLIB_INCLUDE_DIR=..\dlib\external\zlib ^
+
 -DZLIB_LIBRARY_RELEASE=..\dlib\external\zlib ^
+
 -DCMAKE_INSTALL_PREFIX=install ..
  
 cmake --build . --config Release --target INSTALL
@@ -83,11 +91,19 @@ cmake -G "Visual Studio 14 2015 Win64" ..
   
 #### If you have Anaconda installed on your machine
 cmake -G "Visual Studio 14 2015 Win64" ^
+
 -DJPEG_INCLUDE_DIR=..\..\dlib\external\libjpeg ^
+
 -DJPEG_LIBRARY=..\..\dlib\external\libjpeg ^
--DPNG_PNG_INCLUDE_DIR=..\..\dlib\external\libpng ` -DPNG_LIBRARY_RELEASE=..\..\dlib\external\libpng ^
+
+-DPNG_PNG_INCLUDE_DIR=..\..\dlib\external\libpng ^
+
+-DPNG_LIBRARY_RELEASE=..\..\dlib\external\libpng ^
+
 -DZLIB_INCLUDE_DIR=..\..\dlib\external\zlib ^
+
 -DZLIB_LIBRARY_RELEASE=..\..\dlib\external\zlib ^
+
 ..
  
 cmake --build . --config Release
