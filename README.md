@@ -107,6 +107,7 @@ cmake -G "Visual Studio 14 2015 Win64" ^
 ..
  
 cmake --build . --config Release
+
 cd ..\..
 
 ### Step 7: Install Dlib’s Python module (Only Anaconda 3)
