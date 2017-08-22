@@ -108,7 +108,7 @@ cmake -G "Visual Studio 14 2015 Win64" ^
  
 cmake --build . --config Release
 
-cd ..\..
+cd ..\.. 
 
 ### Step 7: Install Dlib’s Python module (Only Anaconda 3)
 Compiling Python bindings for Dlib from source is non-trivial. You have to compile Boost.Python from scratch and configure some environment variables (such as BOOST_ROOT and BOOST_LIBRARYDIR) before you can compile Python module of Dlib. We are skipping that part for now. A complete tutorial on how to build Dlib Python bindings from source will be released in future.
